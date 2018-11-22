@@ -134,4 +134,11 @@ color: #fff;
 
 text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;}
 
+p {background-color: #fff;
+        margin: 20px auto;
+        font-family: Arial;
+        font-size: 2em; 
+        text-transform: uppercase;
+        color: rgba(0,168,255,0.5);
+        text-shadow: 8px 8px 0 rgba(255,0,180,0.5);}
 
