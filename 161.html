@@ -1,0 +1,115 @@
+<html>
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=windows-1251">
+<title>Стили</title>
+<style> p {background-color: #fff;
+        margin: 20px auto;
+        font-family: Arial;
+        font-size: 2em; 
+        text-transform: uppercase;
+        color: rgba(0,168,255,0.5);
+        text-shadow: 8px 8px 0 rgba(255,0,180,0.5);}
+</style>
+<script>
+function funcx(){
+a=document.getElementById("a_znach").value;
+b=a
+a=a*a;
+a=a*a;
+document.getElementById("z161a").innerHTML ="a^4= "+ a;
+a=b
+a=a*a
+a=a*a*a
+document.getElementById("z161b").innerHTML ="a^6= "+ a;
+a=b
+a=a*a
+a=a*a*a*b
+document.getElementById("z161c").innerHTML ="a^7= "+ a;
+a=b
+a=a*a
+a=a*a
+a=a*a
+document.getElementById("z161d").innerHTML ="a^8= "+ a;
+a=b
+a=a*a
+a=a*a
+a=a*a
+a=a*b
+document.getElementById("z161e").innerHTML ="a^9= "+ a;
+a=b
+c=a*a
+a=c*c
+a=a*a
+a=a*c
+document.getElementById("z161f").innerHTML ="a^10= "+ a;
+a=b
+c=a*a
+d=c*c
+a=d*d
+a=a*d*b
+document.getElementById("z161g").innerHTML ="a^13= "+ a;
+a=b
+c=a*a
+d=c*a
+a=d*d
+a=a*a
+a=a*d
+document.getElementById("z161h").innerHTML ="a^15= "+ a;
+a=b
+a=b
+c=a*a
+a=c*c
+a=a*a
+a=a*c
+a=a*a*b
+document.getElementById("z161i").innerHTML ="a^21= "+ a;
+a=b
+a=a*a
+c=a*a
+d=c*c
+e=d*d
+a=e*d
+a=a*c
+document.getElementById("z161j").innerHTML ="a^28= "+ a;
+a=b
+a=a*a
+a=a*a
+a=a*a
+a=a*a
+a=a*a
+a=a*a
+document.getElementById("z161k").innerHTML ="a^64= "+ a;
+}
+</script>
+______________________________________________
+<br>
+1.61
+<br>
+<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+a=<input type="text" value="0" id="a_znach">
+<br>
+<br>
+<button onclick="funcx()"> решение </button>
+<br>
+<br>
+<div id="z161a"></div>
+<div id="z161b"></div>
+<div id="z161c"></div>
+<div id="z161d"></div>
+<div id="z161e"></div>
+<div id="z161f"></div>
+<div id="z161g"></div>
+<div id="z161h"></div>
+<div id="z161i"></div>
+<div id="z161j"></div>
+<div id="z161k"></div>
+</body>
+</html>
+
