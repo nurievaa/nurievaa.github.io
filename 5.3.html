@@ -1,8 +1,10 @@
 <html>
+
 <head>
   <link rel="stylesheet" href="style3.css">
   <script>
     function func1() {
+      document.getElementById("otvet1").innerHTML ="";
       n = Number(document.getElementById("n_f1_znach").value);
       var i = 20;
       while (i < n) {
@@ -11,6 +13,7 @@
       }
     }
     function func2() {
+      document.getElementById("otvet2").innerHTML ="";
       n = Number(document.getElementById("n_f2_znach").value);
       var i = 10;
       while (i < n) {
@@ -18,14 +21,35 @@
         i++;
       }
     }
+    function func3() {
+      document.getElementById("otvet3").innerHTML ="";
+      var a = Number(document.getElementById("n_f3_znach").value);
+     do {
+        document.getElementById("otvet3").innerHTML = document.getElementById("otvet3").innerHTML + a*a*a + "<br>";
+        a++;
+        } while (a < 50)
+  }
+     function func4() {
+       document.getElementById("otvet4").innerHTML ="";
+      var a = Number(document.getElementById("n_f4_znach").value);
+      var b = Number(document.getElementById("m_f4_znach").value);
+      do {
+        document.getElementById("otvet4").innerHTML = document.getElementById("otvet4").innerHTML + a + "<br>";
+        a++;
+        } while (a <= b)
+      }
+      
+    
   </script>
 </head>
 
 <body>
 
-  a) n=
+
+  a) 
+    <a href="#" onclick="func1()" class="action-button shadow animate blue"> если </a>n=
   <input type="text" value="36" id="n_f1_znach">
-  <a href="#" onclick="func1()" class="action-button shadow animate blue"> нажать </a>
+
   <div id="otvet1"></div>
   <br>
   <br>
@@ -36,12 +60,36 @@
   <br>
   б) n=
   <input type="text" value="0" id="n_f2_znach">
-  <a href="#" onclick="func2()" class="action-button shadow animate blue"> кнопку </a>
+  <a href="#" onclick="func2()" class="action-button shadow animate blue"> хочешь </a>
   <div id="otvet2"></div>
+    <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  в) n=
+  <input type="text" value="0" id="n_f3_znach">
+  <a href="#" onclick="func3()" class="action-button shadow animate blue"> идти </a>
+  <div id="otvet3"></div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  г) n=
+  <input type="text" value="0" id="n_f4_znach">
+  m=
+  <input type="text" value="0" id="m_f4_znach">
+  <a href="#" onclick="func4()" class="action-button shadow animate blue"> иди </a>
+  <div id="otvet4"></div>
+
 <br>
   <br>
   <br>
   <br>
 </body>
 </html>
-
