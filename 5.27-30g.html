@@ -1,0 +1,136 @@
+<html>
+<head>
+  <link rel="stylesheet" href="style3.css">
+  <script>
+    function func1() {
+      a = Number(document.getElementById("n_f1_znach").value);
+      b = Number(document.getElementById("n_f2_znach").value);
+      var i = a;
+      var S=0;
+      while (i < b) {
+        S=S+i;
+        document.getElementById("otvet1").innerHTML = document.getElementById("otvet1").innerHTML + i +" "+ S+"<br>";
+        i++;
+      }
+    }
+
+  function func2() {
+      a = Number(document.getElementById("n_f1_znach").value);
+      b = Number(document.getElementById("n_f2_znach").value);
+      var i = a;
+      var S=1;
+      while (i < b) {
+        S=S*i;
+        document.getElementById("otvet2").innerHTML = document.getElementById("otvet2").innerHTML + i +" "+ S+"<br>";
+        i++;
+      }
+    }
+   
+   
+     function func3() {
+      a = Number(document.getElementById("n_f1_znach").value);
+      b = Number(document.getElementById("n_f2_znach").value);
+       document.getElementById("otvet1").innerHTML ="";
+      var i = a;
+      var S=0;
+      while (i <= b) {
+        S=S+i;
+
+        i++;
+      }
+        document.getElementById("otvet3").innerHTML = document.getElementById("otvet3").innerHTML +  S/(b-a+1)+"<br>";
+    }
+      
+   
+   function func4() {
+      a = Number(document.getElementById("n_f1_znach").value);
+      b = Number(document.getElementById("n_f2_znach").value);
+      var i = a;
+      var S=0;
+      while (i <= b) {
+        S=S+i*i;
+        document.getElementById("otvet4").innerHTML = document.getElementById("otvet4").innerHTML + i*i +" "+ S+"<br>";
+        i++;
+      }
+    }
+      
+      
+  </script>
+</head>
+
+<body>
+
+  1g) 
+
+  a=<input type="text" value="0" id="n_f1_znach">
+  b=<input type="text" value="0" id="n_f2_znach">
+  <a href="#" onclick="func1()" class="action-button shadow animate blue"> опять кнопка</a>
+  <div id="otvet1"></div>
+    <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+<br>
+  <br>
+  <br>
+  <br>
+  
+  2g) 
+a=<input type="text" value="0" id="n_f1_znach">
+  b=<input type="text" value="0" id="n_f2_znach">
+  <a href="#" onclick="func2()" class="action-button shadow animate blue"> и это конпка </a>
+  <div id="otvet2"></div>
+    <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+<br>
+  <br>
+  <br>
+  <br>
+  
+  3g) 
+  a=<input type="text" value="0" id="n_f1_znach">
+  b=<input type="text" value="0" id="n_f2_znach">
+  <a href="#" onclick="func3()" class="action-button shadow animate blue"> и это тоже </a>
+  <div id="otvet3"></div>
+    <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+<br>
+  <br>
+  <br>
+  <br>
+  
+  4g)
+  a=<input type="text" value="0" id="n_f1_znach">
+  b=<input type="text" value="0" id="n_f2_znach">
+  <a href="#" onclick="func4()" class="action-button shadow animate blue"> невероятно, но это тоже кнопка </a>
+  <div id="otvet4"></div>
+    <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+<br>
+  <br>
+  <br>
+  <br>
+</body>
+</html>
