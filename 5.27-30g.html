@@ -7,18 +7,19 @@
       b = Number(document.getElementById("n_f2_znach").value);
       var i = a;
       var S=0;
-      while (i < b) {
+      while (i <= b) {
         S=S+i;
         document.getElementById("otvet1").innerHTML = document.getElementById("otvet1").innerHTML + i +" "+ S+"<br>";
         i++;
       }
     }
   function func2() {
-      a = Number(document.getElementById("n_f1_znach").value);
-      b = Number(document.getElementById("n_f2_znach").value);
+      a = Number(document.getElementById("n_f3_znach").value);
+      b = Number(document.getElementById("n_f4_znach").value);
+          document.getElementById("otvet2").innerHTML = " "
       var i = a;
       var S=1;
-      while (i < b) {
+      while (i <= b) {
         S=S*i;
         document.getElementById("otvet2").innerHTML = document.getElementById("otvet2").innerHTML + i +" "+ S+"<br>";
         i++;
@@ -26,23 +27,25 @@
     }
    
    
-     function func3() {
-      a = Number(document.getElementById("n_f1_znach").value);
-      b = Number(document.getElementById("n_f2_znach").value);
-       document.getElementById("otvet1").innerHTML ="";
+      function func3() {
+      a = Number(document.getElementById("n_f5_znach").value);
+      b = Number(document.getElementById("n_f6_znach").value);
+       document.getElementById("otvet3").innerHTML ="";
       var i = a;
       var S=0;
+      var x =0
       while (i <= b) {
         S=S+i;
         i++;
+        x++
       }
-        document.getElementById("otvet3").innerHTML = document.getElementById("otvet3").innerHTML +  S/(b-a+1)+"<br>";
+        document.getElementById("otvet3").innerHTML = document.getElementById("otvet3").innerHTML +  S/x +"<br>";
     }
       
    
    function func4() {
-      a = Number(document.getElementById("n_f1_znach").value);
-      b = Number(document.getElementById("n_f2_znach").value);
+      a = Number(document.getElementById("n_f7_znach").value);
+      b = Number(document.getElementById("n_f8_znach").value);
       var i = a;
       var S=0;
       while (i <= b) {
@@ -78,8 +81,8 @@
   <br>
   
   2g) 
-a=<input type="text" value="0" id="n_f1_znach">
-  b=<input type="text" value="0" id="n_f2_znach">
+a=<input type="text" value="0" id="n_f3_znach">
+  b=<input type="text" value="0" id="n_f4_znach">
   <a href="#" onclick="func2()" class="action-button shadow animate blue"> произведение </a>
   <div id="otvet2"></div>
     <br>
@@ -96,8 +99,8 @@ a=<input type="text" value="0" id="n_f1_znach">
   <br>
   
   3g) 
-  a=<input type="text" value="0" id="n_f1_znach">
-  b=<input type="text" value="0" id="n_f2_znach">
+  a=<input type="text" value="0" id="n_f5_znach">
+  b=<input type="text" value="0" id="n_f6_znach">
   <a href="#" onclick="func3()" class="action-button shadow animate blue"> среднее арифметическое </a>
   <div id="otvet3"></div>
     <br>
@@ -114,8 +117,8 @@ a=<input type="text" value="0" id="n_f1_znach">
   <br>
   
   4g)
-  a=<input type="text" value="0" id="n_f1_znach">
-  b=<input type="text" value="0" id="n_f2_znach">
+  a=<input type="text" value="0" id="n_f7_znach">
+  b=<input type="text" value="0" id="n_f8_znach">
   <a href="#" onclick="func4()" class="action-button shadow animate blue"> сумма квардратов </a>
   <div id="otvet4"></div>
     <br>
