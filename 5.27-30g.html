@@ -1,6 +1,6 @@
 <html>
 <head>
-  <link rel="stylesheet" href="style3.css">
+  <link rel="stylesheet" href="style4.css">
   <script>
     function func1() {
       a = Number(document.getElementById("n_f1_znach").value);
@@ -13,7 +13,6 @@
         i++;
       }
     }
-
   function func2() {
       a = Number(document.getElementById("n_f1_znach").value);
       b = Number(document.getElementById("n_f2_znach").value);
@@ -35,7 +34,6 @@
       var S=0;
       while (i <= b) {
         S=S+i;
-
         i++;
       }
         document.getElementById("otvet3").innerHTML = document.getElementById("otvet3").innerHTML +  S/(b-a+1)+"<br>";
@@ -64,7 +62,7 @@
 
   a=<input type="text" value="0" id="n_f1_znach">
   b=<input type="text" value="0" id="n_f2_znach">
-  <a href="#" onclick="func1()" class="action-button shadow animate blue"> опять кнопка</a>
+  <a href="#" onclick="func1()" class="action-button shadow animate blue"> сумма </a>
   <div id="otvet1"></div>
     <br>
   <br>
@@ -82,7 +80,7 @@
   2g) 
 a=<input type="text" value="0" id="n_f1_znach">
   b=<input type="text" value="0" id="n_f2_znach">
-  <a href="#" onclick="func2()" class="action-button shadow animate blue"> и это конпка </a>
+  <a href="#" onclick="func2()" class="action-button shadow animate blue"> произведение </a>
   <div id="otvet2"></div>
     <br>
   <br>
@@ -100,7 +98,7 @@ a=<input type="text" value="0" id="n_f1_znach">
   3g) 
   a=<input type="text" value="0" id="n_f1_znach">
   b=<input type="text" value="0" id="n_f2_znach">
-  <a href="#" onclick="func3()" class="action-button shadow animate blue"> и это тоже </a>
+  <a href="#" onclick="func3()" class="action-button shadow animate blue"> среднее арифметическое </a>
   <div id="otvet3"></div>
     <br>
   <br>
@@ -118,7 +116,7 @@ a=<input type="text" value="0" id="n_f1_znach">
   4g)
   a=<input type="text" value="0" id="n_f1_znach">
   b=<input type="text" value="0" id="n_f2_znach">
-  <a href="#" onclick="func4()" class="action-button shadow animate blue"> невероятно, но это тоже кнопка </a>
+  <a href="#" onclick="func4()" class="action-button shadow animate blue"> сумма квардратов </a>
   <div id="otvet4"></div>
     <br>
   <br>
