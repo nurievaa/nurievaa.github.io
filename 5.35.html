@@ -1,0 +1,46 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="style4.css">
+  <script>
+  
+  
+         
+         function func1() {
+     
+       n = Number(document.getElementById("n_f1_znach").value);
+       
+       
+        document.getElementById("otvet1").innerHTML = "";
+         var b = 1;
+      var i = 1;
+      var S = 0;
+      while (i <= n) {
+        
+        S=S+1/i*b;
+        document.getElementById("otvet1").innerHTML = document.getElementById("otvet1").innerHTML + i +" "+ S + "<br>";
+        i++
+        b=b*(-1);
+      } 
+   
+    }
+    
+     </script>
+</head>
+
+<body>
+  n = <input type="text" value="1" id="n_f1_znach">
+<a href="#" onclick="func1()" class="action-button shadow animate blue"> архисложный адский пример</a>
+  
+
+  <div id="otvet1"></div>
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</body>
+</html>
