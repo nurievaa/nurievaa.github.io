@@ -1,0 +1,38 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="style3.css">
+  <script>
+  
+         function func1() {
+        document.getElementById("otvet1").innerHTML = "";
+      var i = 2;
+      var S=0;
+      while (i <= 10) {
+        
+        S=S+i/(i+1);
+        document.getElementById("otvet1").innerHTML = document.getElementById("otvet1").innerHTML + i +" "+ S + "<br>";
+       
+        i++;
+      } 
+   
+    }
+    
+     </script>
+</head>
+
+<body>
+
+  
+<a href="#" onclick="func1()" class="action-button shadow animate blue"> очень страшное число </a>
+  <div id="otvet1"></div>
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</body>
+</html>
