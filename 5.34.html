@@ -1,0 +1,40 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="style3.css">
+  <script>
+  
+         function func1() {
+     
+       
+        document.getElementById("otvet1").innerHTML = "";
+         var b = 3;
+      var i = 1;
+      var S = 1;
+      while (i <= 8) {
+        
+        S=S+1/b;
+        document.getElementById("otvet1").innerHTML = document.getElementById("otvet1").innerHTML + i +" "+ S + "<br>";
+        i++
+        b=b*3;
+      } 
+   
+    }
+    
+     </script>
+</head>
+
+<body>
+
+<a href="#" onclick="func1()" class="action-button shadow animate blue">сумма дробей и в знаменателе степень</a>
+  <div id="otvet1"></div>
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</body>
+</html>
