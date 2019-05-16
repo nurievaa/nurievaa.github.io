@@ -1,0 +1,41 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="style4.css">
+  <script>
+  
+         function func1() {
+     
+       n = Number(document.getElementById("n_f1_znach").value);
+       
+       
+        document.getElementById("otvet1").innerHTML = "";
+         
+      var i = 0;
+     do {
+        
+        i++  } 
+        while (i*i <= n)
+             document.getElementById("otvet1").innerHTML = document.getElementById("otvet1").innerHTML + (i+1)*(i+1) + "<br>";
+
+    }
+    
+     </script>
+</head>
+
+<body>
+  n = <input type="text" value="0" id="n_f1_znach">
+<a href="#" onclick="func1()" class="action-button shadow animate blue">первое число больше n </a>
+  
+
+  <div id="otvet1"></div>
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</body>
+</html>
