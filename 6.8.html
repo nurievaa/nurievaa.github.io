@@ -1,0 +1,41 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="style3.css">
+  <script>
+  
+         function func1() {
+     
+       n = Number(document.getElementById("n_f1_znach").value);
+       
+       
+        document.getElementById("otvet1").innerHTML = "";
+         
+      var i = 0;
+     do {
+        
+        document.getElementById("otvet1").innerHTML = document.getElementById("otvet1").innerHTML + i*i + "<br>";
+        i++  } 
+        while (i*i <= n)
+   
+    }
+    
+     </script>
+</head>
+
+<body>
+  n = <input type="text" value="0" id="n_f1_znach">
+<a href="#" onclick="func1()" class="action-button shadow animate blue"> не превышают n </a>
+  
+
+  <div id="otvet1"></div>
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</body>
+</html>
